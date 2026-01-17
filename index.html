@@ -18,12 +18,21 @@
             font-family: 'Montserrat', sans-serif;
             scroll-behavior: smooth;
         }
-        .hero-bg {
-            /* BURADAKİ url(...) İÇİNDEKİ LİNKİ SİLİP KENDİ RESİM YOLUNU YAZABİLİRSİN (Örn: url('img/dukkan.jpg')) */
+       .hero-bg {
+            /* Resim yolunun doğru olduğundan emin olun */
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('magaza.png');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            
+            /* Mobilde performans ve görünüm için varsayılan olarak scroll yapıyoruz */
+            background-attachment: scroll;
+        }
+
+        /* Sadece tablet ve bilgisayarlarda (ekran genişliği 768px ve üstü) fixed olsun */
+        @media (min-width: 768px) {
+            .hero-bg {
+                background-attachment: fixed;
+            }
         }
         .kart-hover:hover {
             transform: translateY(-5px);
@@ -337,4 +346,5 @@
         });
     </script>
 </body>
+
 </html>
