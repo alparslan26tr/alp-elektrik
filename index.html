@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alp Elektrik Aydınlatma | Eskişehir</title>
+     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-weight=%22bold%22 fill=%22%233b82f6%22 font-family=%22sans-serif%22>Æ</text></svg>">
+    <!-- Tailwind CSS (Tasarım için) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome (İkonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- BU KISIM NORMALDE style.css DOSYASINDA OLUR -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            /* BURADAKİ url(...) İÇİNDEKİ LİNKİ SİLİP KENDİ RESİM YOLUNU YAZABİLİRSİN (Örn: url('img/dukkan.jpg')) */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('magaza.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .kart-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- NAVBAR -->
+    <nav class="bg-gray-900/95 backdrop-blur-sm shadow-md border-b border-gray-800 fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-500 flex items-center gap-2">
+                <i class=""></i>  Æ Alp Elektrik
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-gray-300">
+                <a href="#hero" class="hover:text-blue-500 transition">Ana Sayfa</a>
+                <a href="#hizmetler" class="hover:text-blue-500 transition">Hizmetler</a>
+                <a href="#urunler" class="hover:text-blue-500 transition">Ürünler</a>
+                <a href="#iletisim" class="hover:text-blue-500 transition">İletişim</a>
+            </div>
+            <!-- Mobil Menü Butonu -->
+            <button class="md:hidden text-2xl text-gray-300">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO BÖLÜMÜ (GİRİŞ) -->
+    <header id="hero" class="hero-bg h-screen flex items-center justify-center text-center px-4">
+        <div class="text-white max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Eskişehir'in Aydınlık Yüzü</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-300">Modern avizeler, profesyonel elektrik hizmetleri ve size özel aydınlatma çözümleriyle yaşam alanlarınıza değer katıyoruz.</p>
+            <a href="#urunler" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                Koleksiyonu Keşfet
+            </a>
+        </div>
+    </header>
+
+    <!-- HİZMETLER & HAKKIMIZDA -->
+    <section id="hizmetler" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Hizmetlerimiz</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Sadece ürün satmıyoruz, A'dan Z'ye elektrik ve montaj desteği sağlıyoruz.</p>
+                <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Hizmet 1 -->
+                <div class="text-center p-8 border border-gray-700 bg-gray-700/50 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-blue-900/50 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Satış & Teşhir</h3>
+                    <p class="text-gray-400">En trend avize modelleri ve modern led aydınlatma ürünleri mağazamızda.</p>
+                </div>
+                
+                <!-- Hizmet 2 -->
+                <div class="text-center p-8 border border-gray-700 bg-gray-700/50 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-blue-900/50 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Montaj & Kurulum</h3>
+                    <p class="text-gray-400">Aldığınız ürünlerin montajını güvenle yapıyoruz. Matkap derdine son.</p>
+                </div>
+
+                <!-- Hizmet 3 -->
+                <div class="text-center p-8 border border-gray-700 bg-gray-700/50 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-blue-900/50 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Elektrik Tamiratı</h3>
+                    <p class="text-gray-400">Ev ve iş yerlerinizdeki tüm elektrik arızaları, priz değişimi ve tesisat işleri için yanınızdayız.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÜRÜN GALERİSİ -->
+    <section id="urunler" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Öne Çıkan Ürünler</h2>
+                <p class="text-gray-400">En çok tercih edilen modellerimiz.</p>
+                <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
+            </div>
+
+            <!-- JavaScript ile doldurulacak alan -->
+            <div id="urun-galerisi" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kartlar buraya gelecek -->
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM & KONUM -->
+    <section id="iletisim" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- İletişim Bilgileri -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">İletişime Geçin</h2>
+                    <p class="text-gray-400 mb-8">Eskişehir'de hizmet veriyoruz. Ürün sormak veya servis çağırmak için bizi arayın ya da mağazamıza uğrayın.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-yellow-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Adres</h4>
+                                <p class="text-gray-400">Çamlıca, Gündüz Ökçün Blv. 69/b, 26180 Tepebaşı/Eskişehir</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Telefon</h4>
+                                <p class="text-gray-400"><a href="tel:+905443138258" class="hover:text-blue-500">+90 544 313 82 58</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-whatsapp-green bg-green-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">WhatsApp</h4>
+                                <p class="text-gray-400">Hızlı fiyat almak için yazın.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Instagram</h4>
+                                <p class="text-gray-400"><a href="#" class="hover:text-blue-500">@alpelektrik26</a> (Modelleri İnceleyin)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="h-80 w-full rounded-xl overflow-hidden shadow-lg border-4 border-gray-700">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d98115.96476080724!2d30.4748102!3d39.7817748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc17a2155da62f%3A0xc5d17261db61aac7!2sAlp%20Elektrik%20Ayd%C4%B1nlatma!5e0!3m2!1str!2str!4v1768616869829!5m2!1str!2str" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2026 Alp Elektrik Aydınlatma. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- BU KISIM NORMALDE app.js ve data.json DOSYALARINDA OLUR -->
+    <script>
+        // --- DATA (Normalde urunler.json dosyasında durur) ---
+        // --- DATA (Güncellenmiş 12 Ürünlü Liste) ---
+        const urunlerVerisi = [
+            {
+                "id": 1,
+                "isim": "avize",
+                "kategori": "Salon",
+                "resim": "1.jpg",
+                "aciklama": "Eskitme metal detaylı, E27 duy, ahşap ve halat uyumu.",
+                "fiyat": "1.250 TL"
+            },
+            {
+                "id": 2,
+                "isim": "avize",
+                "kategori": "Salon",
+                "resim": "2.jpg",
+                "aciklama": "3000K gün ışığı, modern tasarım, şık gold detaylar.",
+                "fiyat": "850 TL"
+            },
+            {
+                "id": 3,
+                "isim": "avize",
+                "kategori": "Salon",
+                "resim": "3.jpg",
+                "aciklama": "Metal gövde, siyah mat boya, dekoratif aydınlatma.",
+                "fiyat": "450 TL"
+            },
+            {
+                "id": 4,
+                "isim": "avize",
+                "kategori": "Salon",
+                "resim": "4.jpg",
+                "aciklama": "Lüks görünüm, gerçek cam kristaller, 4'lü ampul girişi.",
+                "fiyat": "3.500 TL"
+            },
+            {
+                "id": 5,
+                "isim": "avize",
+                "kategori": "Salon/Antre",
+                "resim": "5.jpg",
+                "aciklama": "Göz yormayan ışık teknolojisi, enerji tasarruflu.",
+                "fiyat": "950 TL"
+            },
+            {
+                "id": 6,
+                "isim": "avize",
+                "kategori": "Salon",
+                "resim": "6.jpg",
+                "aciklama": "Pirinç detaylı, ayarlanabilir başlık, klasik tasarım.",
+                "fiyat": "600 TL"
+            },
+            // --- YENİ EKLENEN ÜRÜNLER (7-12) ---
+            {
+                "id": 7,
+                "isim": "avize",
+                "kategori": "Yatak Odası",
+                "resim": "7.jpg", 
+                "aciklama": "Üç ayaklı doğal ahşap gövde, keten başlık, yumuşak ışık.",
+                "fiyat": "1.450 TL"
+            },
+            {
+                "id": 8,
+                "isim": "avize",
+                "kategori": "Oturma Odası",
+                "resim": "8.jpg",
+                "aciklama": "Çift yönlü ışık süzmesi, antrasit kasa, dış mekan uyumlu.",
+                "fiyat": "350 TL"
+            },
+            {
+                "id": 9,
+                "isim": "avize",
+                "kategori": "Oturma Odası",
+                "resim": "9.jpg",
+                "aciklama": "Güneş enerjili, kablosuz kurulum, su geçirmez IP65.",
+                "fiyat": "250 TL"
+            },
+            {
+                "id": 10,
+                "isim": "avize",
+                "kategori": "Oturma Odası",
+                "resim": "10.jpg",
+                "aciklama": "Telefondan kontrol, sese duyarlı, 16 milyon renk seçeneği.",
+                "fiyat": "550 TL"
+            },
+            {
+                "id": 11,
+                "isim": "avize",
+                "kategori": "Çocuk Odası",
+                "resim": "11.jpg",
+                "aciklama": "El yapımı doğal hasır, bohem tarz, E27 duy.",
+                "fiyat": "750 TL"
+            },
+            {
+                "id": 12,
+                "isim": "avize",
+                "kategori": "Çocuk Odası",
+                "resim": "12.jpg",
+                "aciklama": "Bal rengi cam, geometrik metal çerçeve, modern görünüm.",
+                "fiyat": "1.100 TL"
+            }
+        ];
+
+        // --- APP LOGIC (app.js) ---
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const galeri = document.getElementById('urun-galerisi');
+            urunleriListele(urunlerVerisi);
+
+            function urunleriListele(urunler) {
+                let htmlContent = '';
+                
+                urunler.forEach(urun => {
+                    // WhatsApp linkini dinamik oluşturuyoruz
+                    const telefonNo = "905443138258"; // Kendi numaranı buraya yaz
+                    const mesaj = `Merhaba, ${urun.isim} (ID: ${urun.id}) hakkında bilgi almak istiyorum.`;
+                    const wpLink = `https://wa.me/${905443138258}?text=${encodeURIComponent(mesaj)}`;
+
+                    // KARANLIK TEMA GÜNCELLEMESİ:
+                    // bg-white -> bg-gray-800
+                    // border-gray-100 -> border-gray-700
+                    // text-gray-800 -> text-white
+                    htmlContent += `
+                        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 kart-hover transition duration-300 flex flex-col">
+                            <div class="h-64 overflow-hidden relative group">
+                                <img src="${urun.resim}" alt="${urun.isim}" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                                <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                                    ${urun.kategori}
+                                </span>
+                            </div>
+                            <div class="p-4 text-center">
+                                <h3 class="text-lg font-bold text-white">${urun.isim}</h3>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                galeri.innerHTML = htmlContent;
+            }
+        });
+    </script>
+</body>
+</html>
